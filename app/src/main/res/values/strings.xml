@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">FlexBoxLayoutExample</string>
+    <string name="title_activity_normal_flexbox_layout">NormalFlexBoxLayoutActivity</string>
+    <string name="title_activity_recycler_flex_box_layout">RecyclerFlexBoxLayoutActivity</string>
+
+    <!-- NormalFlexBoxLayout -->
+    <string name="normal_flex_box_layout__hint">Introduce un valor</string>
+    <string name="normal_flex_box_layout__accept">Accept</string>
+
+    <!-- MainActivity -->
+    <string name="main__title">Aplicación de ejemplo para el uso de FlexBoxLayout</string>
+    <string name="main__normal_fbl_btn">NormalFlexBoxLayout</string>
+    <string name="main__recycler_fbl_btn">Recycler y FlexBox</string>
+</resources>
