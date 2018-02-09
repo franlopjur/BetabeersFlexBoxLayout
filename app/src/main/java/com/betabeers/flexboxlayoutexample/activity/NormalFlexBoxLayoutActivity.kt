@@ -43,7 +43,7 @@ class NormalFlexBoxLayoutActivity : AppCompatActivity() {
         itemToAdd.setText(text)
         return itemToAdd
     }
-
+    
     /*
      * Public Methods
      */

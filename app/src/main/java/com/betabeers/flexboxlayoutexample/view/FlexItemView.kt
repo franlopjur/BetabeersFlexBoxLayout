@@ -10,36 +10,36 @@ import com.betabeers.flexboxlayoutexample.R
 import com.betabeers.flexboxlayoutexample.extension.bindView
 
 
-class FlexItemView(private val mContext: Context) : RelativeLayout(mContext) {
+    class FlexItemView(private val mContext: Context) : RelativeLayout(mContext) {
 
-    private val mTextLabel = this.bindView<TextView>(R.id.widget_flex_item__label)
-    private val mCloseIcon = this.bindView<ImageView>(R.id.widget_flex_item__close_icon)
+        private val mTextLabel = this.bindView<TextView>(R.id.widget_flex_item__label)
+        private val mCloseIcon = this.bindView<ImageView>(R.id.widget_flex_item__close_icon)
 
-    init {
-        initialize()
-    }
+        init {
+            initialize()
+        }
 
-    /*
-     * Private Methods
-     */
+        /*
+         * Private Methods
+         */
 
-    private fun initialize() {
-        LayoutInflater.from(mContext).inflate(R.layout.widget_flex_item,
-                this, true)
-    }
+        private fun initialize() {
+            LayoutInflater.from(mContext).inflate(R.layout.widget_flex_item,
+                    this, true)
+        }
 
-    /*
-     * Public Methods
-     */
+        /*
+         * Public Methods
+         */
 
-    fun setClickOnCloseIconListener(function: (view: View) -> Unit) {
-        mCloseIcon.value.setOnClickListener {
-            function(this@FlexItemView)
+        fun setClickOnCloseIconListener(function: (view: View) -> Unit) {
+            mCloseIcon.value.setOnClickListener {
+                function(this@FlexItemView)
+            }
+        }
+
+        fun setText(text: String) {
+            mTextLabel.value.text = text
         }
     }
-
-    fun setText(text: String) {
-        mTextLabel.value.text = text
-    }
-}
 
